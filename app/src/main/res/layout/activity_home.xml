@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/btnPayment"
+                style="@style/DashboardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                android:drawableTop="@drawable/attendance2"
+                android:gravity="center|center_horizontal"
+                android:padding="5dp"
+                android:text="@string/btn_text_wisata"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnInvest"
+                style="@style/DashboardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                android:drawableTop="@drawable/task2"
+                android:gravity="center|center_horizontal"
+                android:padding="5dp"
+                android:text="@string/btn_text_hotel"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+        <TableRow android:id="@+id/tableRowBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                style="@style/DashboardButton"
+                android:drawableTop="@drawable/profile2"
+                android:gravity="center|center_horizontal"
+                android:padding="5dp"
+                android:text="Profile"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnShop"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                style="@style/DashboardButton"
+                android:drawableTop="@drawable/logout2"
+                android:gravity="center|center_horizontal"
+                android:padding="5dp"
+                android:text="@string/btn_text_login"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/logo" android:contentDescription="TODO"/>
+
+    <TextView
+        android:id="@+id/txtCopyRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:text="@string/copyright"
+        android:textColor="@color/putih"
+        android:textSize="12sp" />
+
+</RelativeLayout>
